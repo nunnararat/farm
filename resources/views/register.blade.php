@@ -34,59 +34,60 @@
         _________________________________________________________
         -->
         <div id="top">
-          {{-- <div class="container">
-            <div class="row">
-              <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">organic</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
-              <div class="col-lg-6 text-center text-lg-right">
-                <ul class="menu list-inline mb-0">
-                  <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                  <li class="list-inline-item"><a href="register">Register</a></li>
-                  <li class="list-inline-item"><a href="contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> --}}
-
-          <div class="container">
+            <div class="container">
               <div class="row">
-                <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">organic</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
+                <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">Marketplace Smart Farming</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
                 <div class="col-lg-6 text-center text-lg-right">
                   <ul class="menu list-inline mb-0">
-                    <li class="list-inline-item"><img src="<?php echo url('/'); ?>/img/profile.png" width="30"><b>  นรารัตน์ ตั้งแก้ว</b></li>
-                    <li class="list-inline-item"><a href="profile">Edit Profile</a></li>
-                    <li class="list-inline-item"><a href="#">Logout</a></li>
+                    <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                    <li class="list-inline-item"><a href="register">Register</a></li>
+                    <li class="list-inline-item"><a href="contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
             </div>
 
-          <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Customer login</h5>
-                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            {{-- <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">organic</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
+                  <div class="col-lg-6 text-center text-lg-right">
+                    <ul class="menu list-inline mb-0">
+                      <li class="list-inline-item"><img src="<?php echo url('/'); ?>/img/profile.png" width="30"><b>  นรารัตน์ ตั้งแก้ว</b></li>
+                      <li class="list-inline-item"><a href="/profile">Edit Profile</a></li>
+                      <li class="list-inline-item"><a href="#">Logout</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  <form action="customer-orders" method="post">
-                    <div class="form-group">
-                      <input id="email-modal" type="text" placeholder="email" class="form-control">
+              </div> --}}
+
+              <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Login</h5>
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
                     </div>
-                    <div class="form-group">
-                      <input id="password-modal" type="password" placeholder="password" class="form-control">
-                    </div>
-                    <p class="text-center">
-                      <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                    </p>
-                  </form>
-                  <p class="text-center text-muted">Not registered yet?</p>
-                  <p class="text-center text-muted"><a href="register"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+                    <div class="modal-body">
+                      <form action="customer-orders" method="post">
+                        <div class="form-group">
+                          <label for="username">ชื่อผู้ใช้</label>
+                          <input id="username" type="text" placeholder="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                        <label for="password">รหัสผ่าน</label>
+                          <input id="password" type="password" placeholder="password" class="form-control">
+                        </div>
+                        <p class="text-center">
+                          <button class="btn btn-primary"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</button>
+                        </p>
+                      </form>
+                      <p class="text-center text-muted"><a href="register"><strong>สมัครสมาชิก</strong></a>!</p>
+                     </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            <!-- *** TOP BAR END ***-->
           </div>
-          <!-- *** TOP BAR END ***-->
-        </div>
 
 
         <nav class="navbar navbar-expand-lg">
@@ -162,7 +163,7 @@
               </nav>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <div class="box-register">
                 <h1>สมัครสมาชิกใหม่</h1>
                 <hr>
@@ -283,66 +284,7 @@
     *** FOOTER ***
     _________________________________________________________
     -->
-    <div id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <h4 class="mb-3">Pages</h4>
-              <ul class="list-unstyled">
-                <li><a href="text">เกี่ยวกับเรา</a></li>
-                <li><a href="faq">คำถาม</a></li>
-                <li><a href="contact">ติดต่อเรา</a></li>
-              </ul>
-              <hr>
-              <h4 class="mb-3">User section</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                <li><a href="register">Register</a></li>
-              </ul>
-            </div>
-            <!-- /.col-lg-3-->
-            <div class="col-lg-3 col-md-6">
-              <h4 class="mb-3">Top categories</h4>
-              <h5>หมวดหมู่สินค้า</h5>
-              <ul class="list-unstyled">
-                <li><a href="category">สินค้าขายดี</a></li>
-                <li><a href="category">ผลไม้</a></li>
-                <li><a href="category">ผัก</a></li>
-                <li><a href="category">ข้าว</a></li>
-                <li><a href="category">เมล็ดพันธุ์</a></li>
-                <li><a href="category">ปุ๋ยหมัก</a></li>
-                <li><a href="category">ดิน วัสดุปลูก</a></li>
-                <li><a href="category">อุปกรณ์เทคโนโลยีการเกษตร</a></li>
-              </ul>
-            </div>
 
-            <!-- /.col-lg-3-->
-            <div class="col-lg-3 col-md-6">
-              <h4 class="mb-3">Where to find us</h4>
-              <p><strong>StarCatWiseFarm</strong><br>6/54 อาคารสตาร์แคท<br>ซอยงามวงศ์วาน 59<br>แขวงลาดยาว<br>เขตจตุจักร<br><strong>กรุงเทพมหานคร 10900</strong></p><a href="contact">Go to contact page</a>
-              <hr class="d-block d-md-none">
-            </div>
-            <!-- /.col-lg-3-->
-            <div class="col-lg-3 col-md-6">
-              <h4 class="mb-3">Get the news</h4>
-              <p class="text-muted">ท่านสามารถลงทะเบียนเพื่อรับข่าวสารจากเราได้ที่นี่</p>
-              <form>
-                <div class="input-group">
-                  <input type="text" class="form-control"><span class="input-group-append">
-                    <button type="button" class="btn btn-outline-secondary">Subscribe!</button></span>
-                </div>
-                <!-- /input-group-->
-              </form>
-              <hr>
-              <h4 class="mb-3">Stay in touch</h4>
-              <p class="social"><a href="#" class="facebook external"><i class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i class="fa fa-twitter"></i></a><a href="#" class="instagram external"><i class="fa fa-instagram"></i></a><a href="#" class="gplus external"><i class="fa fa-google-plus"></i></a><a href="#" class="email external"><i class="fa fa-envelope"></i></a></p>
-            </div>
-            <!-- /.col-lg-3-->
-          </div>
-          <!-- /.row-->
-        </div>
-        <!-- /.container-->
-      </div>
       <!-- /#footer-->
       <!-- *** FOOTER END ***-->
 
@@ -364,7 +306,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
       <!-- *** COPYRIGHT END ***-->
     <!-- JavaScript files-->
     <script src="<?php echo url('/'); ?>/vendor/jquery/jquery.min.js"></script>

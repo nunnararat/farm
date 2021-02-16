@@ -53,38 +53,39 @@
               <div class="col-lg-6 text-center text-lg-right">
                 <ul class="menu list-inline mb-0">
                   <li class="list-inline-item"><img src="<?php echo url('/'); ?>/img/profile.png" width="30"><b>  นรารัตน์ ตั้งแก้ว</b></li>
-                  <li class="list-inline-item"><a href="#">Edit Profile</a></li>
+                  <li class="list-inline-item"><a href="/profile">Edit Profile</a></li>
                   <li class="list-inline-item"><a href="#">Logout</a></li>
                 </ul>
               </div>
             </div>
           </div> --}}
 
-        <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Customer login</h5>
-                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-              </div>
-              <div class="modal-body">
-                <form action="customer-orders" method="post">
-                  <div class="form-group">
-                    <input id="email-modal" type="text" placeholder="email" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <input id="password-modal" type="password" placeholder="password" class="form-control">
-                  </div>
-                  <p class="text-center">
-                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                  </p>
-                </form>
-                <p class="text-center text-muted">Not registered yet?</p>
-                <p class="text-center text-muted"><a href="register"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+          <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Login</h5>
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <form action="customer-orders" method="post">
+                    <div class="form-group">
+                      <label for="username">ชื่อผู้ใช้</label>
+                      <input id="username" type="text" placeholder="username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    <label for="password">รหัสผ่าน</label>
+                      <input id="password" type="password" placeholder="password" class="form-control">
+                    </div>
+                    <p class="text-center">
+                      <button class="btn btn-primary"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</button>
+                    </p>
+                  </form>
+                  <p class="text-center text-muted"><a href="register"><strong>สมัครสมาชิก</strong></a>!</p>
+                 </div>
               </div>
             </div>
           </div>
-        </div>
         <!-- *** TOP BAR END ***-->
       </div>
 
@@ -189,10 +190,10 @@
                 <p class="intro">ทุเรียน...ผลผลิตออกสู่ตลาดน้อย และทยอยออกสู่ตลาดหลายรุ่น โดยจะออกสู่ตลาดมากใน ก.ย. จากปกติจะออก ส.ค. เนื่องจากสภาพอากาศที่แปรปรวน พื้นที่ปลูกบางแห่งเสียหายจากพายุ ประกอบกับเกษตรกรวางแผนตลาดนำการผลิตกันมากขึ้น เพื่อให้ผลผลิตออกในช่วงเทศกาลวันสำคัญของจีนที่มีวันหยุดยาว ช่วง ก.ย.-ต.ค. เช่น วันไหว้พระจันทร์ และวันชาติของจีน เพื่อให้ขายได้ราคาดี</p>
                 <p class="read-more"><a href="post" class="btn btn-primary">อ่านต่อ</a></p>
               </div>
-              <div class="pager d-flex justify-content-between">
+              {{-- <div class="pager d-flex justify-content-between">
                 <div class="previous"><a href="#" class="btn btn-outline-primary">← Older</a></div>
                 <div class="next disabled"><a href="#" class="btn btn-outline-secondary disabled">Newer →        </a></div>
-              </div>
+              </div> --}}
             </div>
             <!-- /.col-lg-9-->
             <!-- *** LEFT COLUMN END ***-->

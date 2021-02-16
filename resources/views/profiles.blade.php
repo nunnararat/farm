@@ -1,11 +1,14 @@
 <h1>data list</h1>
 
-{{-- {{print_r($data)}} --}}
-
 <ul>
-@foreach($data as $item)
-<li><h3>{{$item['title']}}</h3> <p>{{$item['body']}}</p></li>
-@endforeach
-</ul>
+    {{-- @foreach($data['meals'] as $item)
+    <li><h3>{{$item['strMeal']}}</h3></li>
+    @endforeach --}}
 
+    @foreach($data['book_array'] as $item)
+    {{-- <li><h3>{{$item['image']}}</h3></li> --}}
+    <img src="{{$item['image']}}">
+    </br>
+    @endforeach
+</ul>
 

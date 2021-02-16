@@ -34,59 +34,60 @@
         _________________________________________________________
         -->
         <div id="top">
-          {{-- <div class="container">
-            <div class="row">
-              <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">organic</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
-              <div class="col-lg-6 text-center text-lg-right">
-                <ul class="menu list-inline mb-0">
-                  <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                  <li class="list-inline-item"><a href="register">Register</a></li>
-                  <li class="list-inline-item"><a href="contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> --}}
-
-          <div class="container">
+            {{-- <div class="container">
               <div class="row">
-                <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">organic</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
+                <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">Marketplace Smart Farming</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
                 <div class="col-lg-6 text-center text-lg-right">
                   <ul class="menu list-inline mb-0">
-                    <li class="list-inline-item"><img src="<?php echo url('/'); ?>/img/profile.png" width="30"><b>  นรารัตน์ ตั้งแก้ว</b></li>
-                    <li class="list-inline-item"><a href="profile">Edit Profile</a></li>
-                    <li class="list-inline-item"><a href="#">Logout</a></li>
+                    <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                    <li class="list-inline-item"><a href="register">Register</a></li>
+                    <li class="list-inline-item"><a href="contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> --}}
 
-          <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Customer login</h5>
-                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="modal-body">
-                  <form action="customer-orders" method="post">
-                    <div class="form-group">
-                      <input id="email-modal" type="text" placeholder="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <input id="password-modal" type="password" placeholder="password" class="form-control">
-                    </div>
-                    <p class="text-center">
-                      <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                    </p>
-                  </form>
-                  <p class="text-center text-muted">Not registered yet?</p>
-                  <p class="text-center text-muted"><a href="register"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">organic</a><a href="#" class="ml-1">สินค้าเกษตรคุณภาพดี!</a></div>
+                  <div class="col-lg-6 text-center text-lg-right">
+                    <ul class="menu list-inline mb-0">
+                      <li class="list-inline-item"><img src="<?php echo url('/'); ?>/img/profile.png" width="30"><b>  นรารัตน์ ตั้งแก้ว</b></li>
+                      <li class="list-inline-item"><a href="/profile">Edit Profile</a></li>
+                      <li class="list-inline-item"><a href="#">Logout</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Login</h5>
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="customer-orders" method="post">
+                        <div class="form-group">
+                          <label for="username">ชื่อผู้ใช้</label>
+                          <input id="username" type="text" placeholder="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                        <label for="password">รหัสผ่าน</label>
+                          <input id="password" type="password" placeholder="password" class="form-control">
+                        </div>
+                        <p class="text-center">
+                          <button class="btn btn-primary"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</button>
+                        </p>
+                      </form>
+                      <p class="text-center text-muted"><a href="register"><strong>สมัครสมาชิก</strong></a>!</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            <!-- *** TOP BAR END ***-->
           </div>
-          <!-- *** TOP BAR END ***-->
-        </div>
 
 
         <nav class="navbar navbar-expand-lg">
@@ -186,92 +187,92 @@
               <div class="row products">
 
                 <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="/profile/stock/salesdetail"><img src="img/pictest.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="/profile/stock/salesdetail"><img src="img/pictest_2.jpg" alt="" class="img-fluid"></a></div>
+                    <div class="product">
+                      <div class="flip-container">
+                        <div class="flipper">
+                          <div class="front"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                          <div class="back"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                        </div>
+                      </div><a href="/profile/stock/salesdetail" class="invisible"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a>
+                      <div class="text">
+                        <h3>ชื่อสินค้า</h3>
+                        <p class="price">
+                          1xx บาท
+                        </p>
+                        <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
+                        <br>
+                        <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
                       </div>
-                    </div><a href="/profile/stock/salesdetail" class="invisible"><img src="img/pictest.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3>ชื่อสินค้า</h3>
-                      <p class="price">
-                        1xx บาท
-                      </p>
-                      <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
-                      <br>
-                      <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
+                      <!-- /.text-->
                     </div>
-                    <!-- /.text-->
-                  </div>
-                  <!-- /.product            -->
+                    <!-- /.product            -->
                 </div>
 
                 <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="/profile/stock/salesdetail"><img src="img/pictest.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="/profile/stock/salesdetail"><img src="img/pictest_2.jpg" alt="" class="img-fluid"></a></div>
+                    <div class="product">
+                      <div class="flip-container">
+                        <div class="flipper">
+                          <div class="front"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                          <div class="back"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                        </div>
+                      </div><a href="/profile/stock/salesdetail" class="invisible"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a>
+                      <div class="text">
+                        <h3>ชื่อสินค้า</h3>
+                        <p class="price">
+                          1xx บาท
+                        </p>
+                        <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
+                        <br>
+                        <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
                       </div>
-                    </div><a href="/profile/stock/salesdetail" class="invisible"><img src="img/pictest.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3>ชื่อสินค้า</h3>
-                      <p class="price">
-                        1xx บาท
-                      </p>
-                      <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
-                      <br>
-                      <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
+                      <!-- /.text-->
                     </div>
-                    <!-- /.text-->
-                  </div>
-                  <!-- /.product            -->
+                    <!-- /.product            -->
                 </div>
 
                 <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="/profile/stock/salesdetail"><img src="img/pictest.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="/profile/stock/salesdetail"><img src="img/pictest_2.jpg" alt="" class="img-fluid"></a></div>
+                    <div class="product">
+                      <div class="flip-container">
+                        <div class="flipper">
+                          <div class="front"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                          <div class="back"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                        </div>
+                      </div><a href="/profile/stock/salesdetail" class="invisible"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a>
+                      <div class="text">
+                        <h3>ชื่อสินค้า</h3>
+                        <p class="price">
+                          1xx บาท
+                        </p>
+                        <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
+                        <br>
+                        <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/pictest.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3>ชื่อสินค้า</h3>
-                      <p class="price">
-                        1xx บาท
-                      </p>
-                      <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
-                      <br>
-                      <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
+                      <!-- /.text-->
                     </div>
-                    <!-- /.text-->
-                  </div>
-                  <!-- /.product            -->
+                    <!-- /.product            -->
                 </div>
 
                 <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="/profile/stock/salesdetail"><img src="img/pictest.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="/profile/stock/salesdetail"><img src="img/pictest_2.jpg" alt="" class="img-fluid"></a></div>
+                    <div class="product">
+                      <div class="flip-container">
+                        <div class="flipper">
+                          <div class="front"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                          <div class="back"><a href="/profile/stock/salesdetail"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a></div>
+                        </div>
+                      </div><a href="/profile/stock/salesdetail" class="invisible"><img src="<?php echo url('/'); ?>/img/hot2.jpg" alt="" class="img-fluid"></a>
+                      <div class="text">
+                        <h3>ชื่อสินค้า</h3>
+                        <p class="price">
+                          1xx บาท
+                        </p>
+                        <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
+                        <br>
+                        <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/pictest.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3>ชื่อสินค้า</h3>
-                      <p class="price">
-                        1xx บาท
-                      </p>
-                      <input  class="input-quantity"  type="number" id="quantity" name="quantity" min="1" max="99">
-                      <br>
-                      <p class="buttons"><a href="/profile/stock/salesdetail" class="btn btn-outline-secondary">รายละเอียดสินค้า</a>
+                      <!-- /.text-->
                     </div>
-                    <!-- /.text-->
+                    <!-- /.product            -->
                   </div>
-                  <!-- /.product            -->
-                </div>
 
 
 
