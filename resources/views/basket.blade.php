@@ -181,7 +181,7 @@
                           <td><a href="#"><img src="<?php echo url('/'); ?>/img/hot1.jpg" alt="White Blouse Armani"></a></td>
                           <td><a href="#">ฟักทอง</a></td>
                           <td>
-                            <input type="number" value="2" class="form-control">
+                            <input type="number" value="2" min="1" class="form-control">
                           </td>
                           <td>$123.00</td>
                           <td>$0.00</td>
@@ -192,7 +192,7 @@
                           <td><a href="#"><img src="<?php echo url('/'); ?>/img/hot4.jpg" alt="Black Blouse Armani"></a></td>
                           <td><a href="#">ทุเรียน</a></td>
                           <td>
-                            <input type="number" value="1" class="form-control">
+                            <input type="number" value="1" min="1" class="form-control">
                           </td>
                           <td>$200.00</td>
                           <td>$0.00</td>
